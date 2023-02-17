@@ -7,8 +7,7 @@
 
 /**
  * main - This programme is to print a text according to number
- * Return: Always (Success)
- *
+ * Return: 0 (Success)
  */
 
 int main(void)
@@ -26,7 +25,8 @@ int main(void)
 	printf("Last digit of %d is %d and is grater than 5\n", n, lastd);
 	}
 	else if (lastd == 0)
-	{printf("Last digit of %d is %d and is 0\n", n, lastd);
+	{
+	printf("Last digit of %d is %d and is 0\n", n, lastd);
 	}
 	else if (lastd < 6 && lastd != 0)
 	{
