@@ -3,22 +3,26 @@
 /**
  * print_number - This function prints an integer.
  * @n: The integer to be printed.
+ * Return: Always 0
  */
 
 void print_number(int n)
 
 {
 
-	unsigned int num = n;
+	unsigned int n1;
 
+	n1 = n;
 	if (n < 0)
 	{
 	_putchar('_');
-	num = -num;
+	n1 = -n;
 	}
 
-	if ((num / 10) > 0)
-	print_number(num / 10);
-	_putchar((num % 10) + '0');
+	if (n1 / 10 != 0)
+	{
+	print_number(n1 / 10);
+	}
+	_putchar((n1 % 10) + '0');
 
 }
